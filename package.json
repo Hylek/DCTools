@@ -1,0 +1,13 @@
+{
+  "name": "com.danielcumbor.dctools",
+  "version": "1.0.0",
+  "displayNane": "DC Tools",
+  "description": "A collection of my commonly used scripts and utils.",
+  "unity": "2019.1",
+  "unityRelease": "10f1",
+  "author": {
+    "name": "Daniel Cumbor",
+    "email": "cumbordaniel@gmail.com",
+    "url": "https://danielcumbor.uk"
+  }
+}
