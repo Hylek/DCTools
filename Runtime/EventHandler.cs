@@ -32,6 +32,11 @@ namespace DCTools
                 break;
             }
         }
+
+        public void Publish(ITinyMessage message)
+        {
+            BaseLocator.Find<ITinyMessengerHub>().Publish(message);
+        }
         
         public void Dispose()
         {
