@@ -14,11 +14,8 @@ namespace DCTools
                 
                 _instance = (T)FindFirstObjectByType(typeof(T));
                 
-                if (_instance == null)
-                {
-                    SetupInstance();
-                }
-
+                if (_instance == null) SetupInstance();
+                
                 return _instance;
             }
         }
@@ -27,10 +24,6 @@ namespace DCTools
 
         private static void SetupInstance()
         {
-            _instance = (T)FindFirstObjectByType(typeof(T));
-            
-            if (_instance != null) return;
-            
             var gameObj = new GameObject
             {
                 name = typeof(T).Name
